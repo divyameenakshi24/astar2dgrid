@@ -22,14 +22,15 @@ Calculate the straight line difference between the two points.
 Draw the pathbased on the plan given by get ridding the obstacles that is minimum in distance.
 
 ## Draw the 2D 
-![image](https://user-images.githubusercontent.com/75235813/168844082-f918fbcb-4380-4deb-876a-7bb56f27fff5.png)
+![out](https://user-images.githubusercontent.com/75235402/168860120-9f017d9f-d4d6-4e00-adee-c84bf603d0d2.jpg)
+
 
 
 ## PROGRAM
 ```
 /*
-Developed by B.Kavya
-Registration Number: 212220230007
+Developed by : A.Divya Meenakshi
+Registration Number: 212220230014
 */
 ```
 ```
@@ -182,13 +183,14 @@ def astar_search(problem, h=None):
     h = h or problem.h
     return best_first_search(problem, f=lambda n: g(n) + h(n))
     
-grid1 = GridProblem(initial=(4,2), goal =(10,8) ,obstacles={(4,3),(6,3),(5,5),(6,5),(8,4),(9,5),(10,5),(7,6),(9,7),(9,8)})
+grid1 = GridProblem(initial=(4,3), goal =(1,6) ,obstacles={(1,2),(1,10),(2,4),(2,7),(3,1),(3,6),(3,10),(4,2),(5,4),(5,8)})
 solution1 = astar_search(grid1)
 path_states(solution1)
 ```
 
 ## OUTPUT:
-![image](https://user-images.githubusercontent.com/75235813/168844476-5de8530b-e81d-4178-916c-a59215f5f52d.png)
+![code](https://user-images.githubusercontent.com/75235402/168860058-b7c8e765-e81c-4b89-9ea3-fd8411d31686.jpg)
+
 
 
 The Completeness and complexity of the algorithm:
